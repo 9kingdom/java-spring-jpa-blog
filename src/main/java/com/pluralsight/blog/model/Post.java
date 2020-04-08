@@ -12,6 +12,9 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    private Category category;
+
     private String title;
     private String lead;
 
@@ -38,6 +41,13 @@ public class Post {
         this.date = date;
     }
 
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
     public Long getId() {
         return id;
     }
