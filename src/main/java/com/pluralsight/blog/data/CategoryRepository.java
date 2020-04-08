@@ -9,13 +9,9 @@ import java.util.Optional;
 
 
 @Component
-public class CategoryRepository {
+public interface CategoryRepository extends JpaRepository{
 
-    public List<Category> findAll() {
-        return null;
-    }
+    List<Category> findAll();
 
-    public Optional<Category> findById(Long id) {
-        return null;
-    }
+    Optional<Category> findById(Long id);
 }
