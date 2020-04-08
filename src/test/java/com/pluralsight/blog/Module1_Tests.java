@@ -130,7 +130,7 @@ public class Module1_Tests {
                 "Travel Keyboard",
                 "SD Card Reader"));
 
-        assertEquals("There should be " + titles.size() + " Posts loaded from data-categories.sql.", titles.size(), posts.size());
+        assertEquals("There should be " + titles.size() + " Posts loaded from data.sql.", titles.size(), posts.size());
 
 
         boolean titlesMatch = true;
@@ -141,7 +141,7 @@ public class Module1_Tests {
             }
         }
 
-        assertTrue("The titles loaded from data-categories.sql do not match the expected titles.", titlesMatch);
+        assertTrue("The titles loaded from data.sql do not match the expected titles.", titlesMatch);
     }
 
 }

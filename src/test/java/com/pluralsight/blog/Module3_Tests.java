@@ -228,7 +228,7 @@ public class Module3_Tests {
                 "Computer Accessories",
                 "Smart Home"));
 
-        assertEquals("Task 4: There should be " + categories.size() + " Posts loaded from data-categories.sql.",
+        assertEquals("Task 4: There should be " + categories.size() + " Posts loaded from data.sql.",
                 categories.size()+1, spanElements.size());
 
 
@@ -240,7 +240,7 @@ public class Module3_Tests {
             }
         }
 
-        assertTrue("Task 4: The titles loaded from data-categories.sql do not match the expected titles.", categoriesMatch);
+        assertTrue("Task 4: The titles loaded from data.sql do not match the expected titles.", categoriesMatch);
     }
 
     @Test
