@@ -9,7 +9,7 @@ import java.util.Optional;
 
 
 @Component
-public interface CategoryRepository extends JpaRepository{
+public interface CategoryRepository extends JpaRepository<Category, Long>{
 
     List<Category> findAll();
 
